@@ -1,0 +1,9 @@
+[Tue Nov 27 10:00:55.591465 2018] [mpm_prefork:notice] [pid 3032] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.22 configured -- resuming normal operations
+[Tue Nov 27 10:00:55.591630 2018] [core:notice] [pid 3032] AH00094: Command line: 'apache2'
+[Tue Nov 27 10:00:55.678695 2018] [core:info] [pid 3093] [client 10.240.0.90:38220] AH00128: File does not exist: /home/ubuntu/workspace/favicon.ico, referer: https://s-d-pacomanteiga.c9users.io/tcoding/user.view.html
+[Tue Nov 27 10:01:45.949368 2018] [mpm_prefork:notice] [pid 3032] AH00169: caught SIGTERM, shutting down
+[Mon Jan 07 14:57:30.406218 2019] [mpm_prefork:notice] [pid 2479] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.22 configured -- resuming normal operations
+[Mon Jan 07 14:57:30.406271 2019] [core:notice] [pid 2479] AH00094: Command line: 'apache2'
+[Mon Jan 07 14:57:40.683556 2019] [core:info] [pid 2497] [client 10.240.0.222:37882] AH00128: File does not exist: /home/ubuntu/workspace/favicon.ico, referer: https://s-d-pacomanteiga.c9users.io/tcoding/user.view.html
+[Mon Jan 07 14:57:43.623066 2019] [core:info] [pid 2501] [client 10.240.1.97:52516] AH00128: File does not exist: /home/ubuntu/workspace/users, referer: https://s-d-pacomanteiga.c9users.io/tcoding/user.view.html
+[Mon Jan 07 14:58:42.591318 2019] [mpm_prefork:notice] [pid 2479] AH00169: caught SIGTERM, shutting down

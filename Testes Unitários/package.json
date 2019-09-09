@@ -1,0 +1,16 @@
+{
+  "name": "testssd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "functions.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "jest": "^23.6.0"
+  }
+}

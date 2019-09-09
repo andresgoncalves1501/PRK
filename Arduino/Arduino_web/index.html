@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registo dos lugares de Estacionamento</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
+    <link rel='stylesheet prefetch' href='https://raubarrera.neocities.org/cdpn/style.css'>
+    <!-- Custom JS -->
+    <script src="controller/main.js"></script>
+</head>
+
+<body>
+    <h1 class="title">Registo dos lugares de Estacionamento</h1>
+    <div class="center-on-page">
+        <div class="content">
+            <h1>Entradas e Saídas</h1>
+            <div class="select">
+                <select name="slct" id="slc_value" onchange="ard()">
+                    <option value="in">Entrada</option>
+                    <option value="out">Saída</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="content">
+            <h1>Selecionar o Arduino</h1>
+            <div class="select" id="result">
+                <!-- <select name="slct" id="slc_parque" onchange='ard()'>
+                    <option value="1">Arduino 1 </option>
+                </select> -->
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <!-- Butões para ligar o código do arduino
+            <button type="button" id="startButton" class="btn btn-dark" onclick="ard_start()">Registar Entradas</button>
+            <button type="button" id="stopButton" class="btn btn-danger" onclick="ard_stop()">Registar Saídas</button> -->
+        <!-- Div de entrada ou saida -->
+
+
+
+        <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#listRecords"
+                aria-expanded="false" aria-controls="listRecords" onclick="orderToCreateTable()">
+                View/Edit Records
+            </button> -->
+        </p>
+        <div class="flex dark">
+            <a href="#0" class="bttn-dark" id="btnstart">Recolher Dados</a>
+          </div>
+    </div>
+    <br>
+    <br>
+    <canvas class="background"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="./controller/fetch.controller.js"></script>
+</body>
+<script>
+    //-- teste com o pacote de particulas -- 
+    window.onload = function () {
+    ardfetch()
+    var particles = Particles.init({
+        selector: '.background',
+        color: ['#DA0463', '#404B69', '#DBEDF3'],
+        connectParticles: true
+    });
+
+    // -- Posto aqui para não crashar o server -- 
+    document.getElementById("btnstart").addEventListener("click", function () {
+        ard()
+        document.getElementById("btnstart").style.display = "none"
+        //document.getElementById('btnstop').style.display = "inline"
+    })
+
+}
+</script>
+
+</html>
